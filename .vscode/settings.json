@@ -1,0 +1,6 @@
+{
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ffd1dc", // Change to any hex color you prefer
+    "editor.selectionHighlightBackground": "#ffd1dc78" // Adjust opacity if needed
+  }
+}
