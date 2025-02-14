@@ -31,4 +31,5 @@ Für mein Portfolio verwende ich folgende Breakpoints, um eine optimale Darstell
 - Desktop & große Bildschirme: min-width: 1024px
 - Tablets & kleine Laptops: min-width: 768px und max-width: 1024px
 - Smartphones: max-width: 768px
+
 Da dies meine erste Auseinandersetzung mit HTML und CSS ist, habe ich mich für den Desktop-First-Ansatz entschieden. Dieser ist anfängerfreundlicher, da die Gestaltung auf großen Bildschirmen mehr Platz für Layout-Elemente bietet und die Umsetzung ohne Einschränkungen durch kleinere Viewports erfolgen kann. Anschließend lassen sich mit Media Queries gezielt Anpassungen für kleinere Geräte vornehmen. Zudem wird mein Portfolio vorrangig auf größeren Bildschirmen betrachtet, etwa von potenziellen Arbeitgebern oder Kunden, die sich meine Projekte in hoher Qualität anschauen möchten. Durch diese Herangehensweise bleibt das Design konsistent und die Benutzererfahrung optimal.
