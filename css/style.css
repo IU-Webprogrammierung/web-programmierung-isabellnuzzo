@@ -36,6 +36,8 @@ https://maketintsandshades.com/#9C27B0
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /128
 
 */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 html {
   font-size: 62.5%;
 }
@@ -47,7 +49,16 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", sans-serif;
 }
 
 .heading-primary {

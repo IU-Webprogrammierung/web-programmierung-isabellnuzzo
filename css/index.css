@@ -1,6 +1,6 @@
 .section-hero {
   background-color: #f5e9f7;
-  padding: 6.4rem 0;
+  padding: 6.4rem 2rem;
 }
 
 .hero {
@@ -22,30 +22,33 @@
 .hero-img-box {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
+/* Birthdate - Top Left */
 .birthdate {
   position: absolute;
-  top: 40rem;
-  left: -5rem;
+  top: 55%;
+  left: -10%;
   background-color: #d7a9df;
   color: #3e1046;
   padding: 8px 12px;
   border-radius: 1rem;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   white-space: nowrap;
 }
 
+/* Origin - Top Right */
 .origin {
   position: absolute;
-  top: 50rem;
-  right: -4rem;
+  top: 70%;
+  right: -7%;
   background-color: #d7a9df;
   color: #3e1046;
   padding: 8px 12px;
   border-radius: 1rem;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -68,11 +71,8 @@
   border-radius: 1.5rem;
   padding: 0;
   margin: 0;
-  font-size: 2rem;
-  width: 10rem;
-  height: 10rem;
-  background-color: transparent;
-  border-color: transparent;
+  width: 8rem;
+  height: auto;
 }
 
 .li-btn img {
@@ -87,9 +87,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
-  position: absolute;
-  bottom: 0;
   margin-top: 5rem;
   gap: 1rem;
-  width: 32%;
+  width: 100%;
 }
