@@ -1,0 +1,95 @@
+.section-hero {
+  background-color: #f5e9f7;
+  padding: 6.4rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.hero-img-box {
+  position: relative;
+  display: inline-block;
+}
+
+.birthdate {
+  position: absolute;
+  top: 40rem;
+  left: -5rem;
+  background-color: #d7a9df;
+  color: #3e1046;
+  padding: 8px 12px;
+  border-radius: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.origin {
+  position: absolute;
+  top: 50rem;
+  right: -4rem;
+  background-color: #d7a9df;
+  color: #3e1046;
+  padding: 8px 12px;
+  border-radius: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.hero-text-box {
+  margin-bottom: 10rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  text-align: left;
+}
+
+.li-btn {
+  display: inline-block;
+  border-radius: 1.5rem;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.li-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin-top: 5rem;
+  gap: 1rem;
+  width: 32%;
+}

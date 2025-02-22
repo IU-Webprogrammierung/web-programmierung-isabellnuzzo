@@ -28,45 +28,54 @@
       </nav>
     </header>
 
-    <section>
-      <h1>UI/UX Designer</h1>
-      <h2>
-        Hello, I'm
-        <p>Isabell Nuzzo</p>
-      </h2>
-      <p>
-        I am pursuing a degree in User Experience Design and am currently based
-        in Munich, Germany. I bring my ideas to life through
-        <strong>extensive research and hands-on experimentation</strong> with
-        various media. I consider every perspective and ensure that all my
-        skills contribute meaningfully to my projects.
-      </p>
-      <p>
-        My passion for understanding how things work, combined with my problem
-        solving abilities, makes me a <em>reliable designer and developer</em>.
-        I quickly acquire new skills as needed - proven by this very website!
-        Before creating this portfolio, I had minimal experience with coding,
-        but I took a deep dive to bring it to completion.
-      </p>
-      <p>
-        If I've piqued your interest, let's discuss how we can collaborate in
-        the future!
-      </p>
-      <p>
-        <img src="Assets/Isabell Nuzzo.PNG" alt="Headshot of Isabell Nuzzo" />
-      </p>
-      <button>Download CV</button>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">UI/UX Designer</h1>
+          <h2 class="heading-secondary">
+            Hello, I'm
+            <p>Isabell Nuzzo</p>
+          </h2>
 
-      <a href="https://de.linkedin.com/" target="_blank">
-        <img src="Assets/LI Logo.png" alt="Linkedin Logo" />
-      </a>
+          <p class="hero-description">
+            I am pursuing a degree in User Experience Design and am currently
+            based in Munich, Germany. I bring my ideas to life through
+            <strong>extensive research and hands-on experimentation</strong>
+            with various media. I consider every perspective and ensure that all
+            my skills contribute meaningfully to my projects. <br />
+            My passion for understanding how things work, combined with my
+            problem solving abilities, makes me a
+            <em>reliable designer and developer</em>. I quickly acquire new
+            skills as needed - proven by this very website! Before creating this
+            portfolio, I had minimal experience with coding, but I took a deep
+            dive to bring it to completion. <br />
+            If I've piqued your interest, let's discuss how we can collaborate
+            in the future!
+          </p>
+        </div>
+        <div class="hero-img-box">
+          <div class="hero-img-container">
+            <img
+              src="Assets/Isabell Nuzzo.PNG"
+              alt="Headshot of Isabell Nuzzo"
+              class="hero-img"
+            />
+            <span class="birthdate"> 7th Dec 2002</span>
+            <span class="origin">German</span>
+          </div>
+        </div>
 
-      <span> 7th Dec 2002</span>
-      <span>German</span>
+        <div class="button-container">
+          <button class="btn">Download CV</button>
+          <a href="https://de.linkedin.com/" target="_blank" class="li-btn">
+            <img src="Assets/LI Logo.png" alt="Linkedin Logo" />
+          </a>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Why me?</h2>
+      <h2 class="heading-secondary">Why me?</h2>
       <p>
         I approach all of my projects with
         <strong>curiosity and a problem-solving mindset</strong>, always looking
@@ -201,7 +210,7 @@
 
     <footer>
       <div id="contact-me">
-        <h2>Contact me</h2>
+        <h2 class="heading-secondary">Contact me</h2>
         <h3>Let's work together!</h3>
 
         <p>
@@ -261,7 +270,7 @@
             placeholder="Type your message..."
             required
           ></textarea>
-          <button type="submit">Send</button>
+          <button class="btn" type="submit">Send</button>
         </form>
       </div>
     </footer>
