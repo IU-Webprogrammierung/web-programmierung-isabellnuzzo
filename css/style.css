@@ -8,7 +8,7 @@ Playfair Display
 DM Sans
 
 - Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 44 / 52 / 62 / 74 / 86 / 98
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 --- 02 COLORS ---
 https://maketintsandshades.com/#9C27B0
@@ -19,6 +19,7 @@ https://maketintsandshades.com/#9C27B0
 
 !Tints
 - #f5e9f7
+- #e1bee7
 - #d7a9df
 - #ce93d8
 - #ba68c8
@@ -76,6 +77,13 @@ h6 {
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.5px;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  text-align: left;
 }
 
 .btn {

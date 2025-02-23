@@ -1,3 +1,5 @@
+/* Hero section */
+
 .section-hero {
   background-color: #f5e9f7;
   padding: 6.4rem 2rem;
@@ -90,4 +92,78 @@
   margin-top: 5rem;
   gap: 1rem;
   width: 100%;
+}
+
+/* Technical skills and development skills */
+
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.skills-container div {
+  text-align: center;
+  width: 100px;
+  position: relative;
+}
+
+.skills-container label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.skills-container img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 0.5rem;
+  box-shadow: 4px 4px 0px black;
+  object-fit: contain;
+  object-position: center;
+}
+
+.procreate {
+  background-color: #242424;
+}
+
+.adobe-xd {
+  background-color: #470137;
+}
+
+.css {
+  background-color: #663399;
+}
+/* Experience bars */
+
+.progress {
+  width: 9rem;
+  height: 1rem;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: #e1bee7;
+  border-radius: 6px;
+}
+
+.progress::-webkit-progress-value {
+  background-color: #9c27b0;
+  border-radius: 6px;
+}
+
+.progress::-moz-progress-bar {
+  background-color: #9c27b0;
+  border-radius: 6px;
 }
