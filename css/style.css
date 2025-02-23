@@ -19,6 +19,7 @@ https://maketintsandshades.com/#9C27B0
 
 !Tints
 - #f5e9f7
+- #ebd4ef
 - #e1bee7
 - #d7a9df
 - #ce93d8
@@ -86,6 +87,25 @@ h6 {
   text-align: left;
 }
 
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .btn {
   display: inline-block;
   background-color: #9c27b0;
@@ -106,4 +126,91 @@ h6 {
   cursor: pointer;
   background-color: #ba68c8;
   border: 1px solid #c47dd0;
+}
+
+/* footer styling */
+
+footer {
+  padding: 2rem;
+  background-color: #f5e9f7;
+}
+
+.footer-content {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-info h2,
+.contact-info h3 {
+  margin-bottom: 1 rem;
+}
+
+.contact-info p {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info a {
+  color: #9c27b0;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #ce93d8;
+  border-radius: 4px;
+  font-size: 1.4rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ba68c8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.button-footer {
+  text-align: right;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #e1bee7;
+  box-shadow: 0 0 5px #fff;
+  background-color: #e1bee7;
 }
