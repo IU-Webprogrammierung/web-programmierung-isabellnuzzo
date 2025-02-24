@@ -1,0 +1,158 @@
+/* Hero section of Wisebloom */
+.WB-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px;
+  position: relative;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+  margin-right: -60px;
+  z-index: 1;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.image-container img {
+  max-width: 36rem;
+  height: auto;
+  position: relative;
+}
+
+.image-container img:last-child {
+  position: absolute;
+  left: 310px;
+  top: 20px;
+  z-index: 1;
+}
+.image-container img:first-child {
+  z-index: 2;
+  top: 100px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+a {
+  color: #9c27b0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Assessment section */
+.section-assess {
+  background-color: #f5e9f7;
+}
+
+.Assessment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.Assessment p {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* styling the scope of work section */
+.scope-of-work {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.scope-item {
+  text-align: center;
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 100px;
+}
+
+.scope-item h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.scope-item p {
+  font-size: 2rem;
+  color: #000;
+  margin-top: 5px;
+}
+
+.vertical-line-small {
+  width: 2px;
+  height: 30px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.vertical-line-middle {
+  width: 2px;
+  height: 80px;
+  background-color: #000;
+  align-self: center;
+}
+
+.scope-bottom {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 0;
+  margin-top: -15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  width: 500px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.bottom-item {
+  text-align: center;
+  position: relative;
+}
+
+.heading-tertiary {
+  text-align: center;
+}
