@@ -10,6 +10,9 @@
   position: relative;
 }
 
+.WB-hero h2 {
+  text-align: left;
+}
 .text-content {
   flex: 1;
   display: flex;
@@ -155,4 +158,172 @@ a:hover {
 
 .heading-tertiary {
   text-align: center;
+}
+
+/* Homepage */
+
+.section-walkthrough {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-h {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.home {
+  text-align: center !important;
+}
+
+.heading-primary {
+  text-align: left;
+}
+
+.heading-secondary br {
+  display: block;
+}
+
+.text-content-h {
+  flex: 1 1 60%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.image-content {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.heading-secondary {
+  flex: 1 1 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.paragraph-1 {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.left-column {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10rem;
+  object-fit: cover;
+}
+
+.right-column {
+  flex: 1 1 40%;
+  display: block;
+}
+
+.right-column img {
+  float: left;
+  shape-outside: margin-box;
+  margin: 20px 20px 0 0; /* Adjust for bottom placement */
+  max-width: 65%;
+  margin-left: -15rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.paragraph-2 {
+  margin: 0;
+  text-align: end;
+}
+
+/* studying */
+.studying-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.studying-text {
+  flex: 1;
+  text-align: right;
+}
+
+.studying-text h2 {
+  margin-bottom: 20px;
+}
+
+.studying-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.container-pictures {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* achievements */
+
+.achievements-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.achievements-text {
+  flex: 1;
+  text-align: left;
+}
+
+.achievements-text h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.achievements-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* conclusion */
+
+.conclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem;
 }
