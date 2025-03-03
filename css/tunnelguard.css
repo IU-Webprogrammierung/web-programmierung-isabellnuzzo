@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
 .section-one p {
   grid-column: 1 / -1;
   grid-row: 3;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 3rem auto 0;
   text-align: justify;
   text-align-last: center;
@@ -63,7 +63,7 @@
 
 /* project psychology */
 .section-psychology {
-  max-width: 1200px;
+  max-width: 1500px;
   position: relative;
   margin: 0 auto;
   padding: 4rem 2rem;
@@ -120,7 +120,7 @@
 
 /* process flow */
 .section-flow {
-  max-width: 1200px;
+  max-width: 1500px;
   text-align: center;
   position: relative;
   margin: 0 auto;
@@ -136,7 +136,7 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   padding: 2px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
   background: transparent;
 }
@@ -191,7 +191,7 @@
 
 /* Researching */
 .section-research {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 4rem auto;
   padding: 0 2rem;
 }
@@ -227,7 +227,7 @@
 
 .image-Markus,
 .image-Anna {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -238,7 +238,7 @@
 
 /* Design */
 .section-design {
-  max-width: 1200px;
+  max-width: 1500px;
   position: relative;
   margin: 0 auto;
   padding: 4rem 2rem;
@@ -310,4 +310,80 @@
   height: auto;
   margin-top: 1rem;
   border-radius: 8px;
+}
+
+/* develop */
+.section-develop {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-develop h2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-develop h3 {
+  margin: 4rem 0 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-develop h4 {
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.05em;
+}
+
+.section-develop h2::before,
+.section-develop h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.section-block {
+  display: flex;
+  gap: 3rem;
+  margin: 6rem 0;
+  align-items: start;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-group {
+  flex: 1.5;
+  min-width: 65%;
+}
+
+.image-group img {
+  width: 100%;
+  max-width: none;
+  margin: 3rem 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-group {
+  flex: 1;
+  display: flex;
+  align-self: center;
+  padding: 2rem;
+  position: relative;
+  min-width: 35%;
+}
+
+.text-group p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  background: #f5e9f7;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  margin: 0;
 }

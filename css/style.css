@@ -256,7 +256,7 @@ footer {
 .footer-content {
   display: flex;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 1rem;
 }

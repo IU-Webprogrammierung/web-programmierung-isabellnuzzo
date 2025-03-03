@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 80px;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 28px;
   position: relative;
@@ -163,7 +163,7 @@ a:hover {
 /* Homepage */
 
 .section-walkthrough {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
 }

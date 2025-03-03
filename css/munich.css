@@ -60,7 +60,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -123,7 +123,7 @@
 
 /* Final product */
 .section-finalproduct {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -147,7 +147,7 @@
 
 /* Website Design */
 .section-design {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 20px;
   display: grid;
