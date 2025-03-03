@@ -200,6 +200,12 @@ h6 {
   text-align: left;
 }
 
+.heading-quaternary {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
 p {
   font-size: 2rem;
   line-height: 1.6;

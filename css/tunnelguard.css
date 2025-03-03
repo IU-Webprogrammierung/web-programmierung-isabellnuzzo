@@ -1,0 +1,237 @@
+/* hero area */
+.section-one {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-one h1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: clamp(3rem, 10vw, 6rem);
+  margin: 2rem 0 -3rem;
+  z-index: 2;
+  text-align: center;
+  color: #9c27b0;
+  font-size: 8.6rem;
+}
+
+.section-one img {
+  grid-column: 2;
+  grid-row: 2;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.section-one h3 {
+  align-self: center;
+}
+
+.section-one h3:first-of-type {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.section-one h3:last-of-type {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: start;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.section-one p {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
+  padding: 0 1rem;
+}
+
+/* project psychology */
+.section-psychology {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.section-psychology h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.section-psychology h3 {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.section-psychology h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #9c27b0;
+  border-radius: 50%;
+}
+
+.section-psychology h3:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.section-psychology h3:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.section-psychology p {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.section-psychology p:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* process flow */
+.section-flow {
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-flow h2 {
+  margin-bottom: 4rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 2px;
+  max-width: 1200px;
+  margin: auto;
+  background: transparent;
+}
+
+.week-header,
+.task-cell {
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.week-header {
+  font-size: 2.4rem;
+}
+
+.task-cell {
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  font-weight: normal;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Assigning each task to its own row */
+.task-cell:nth-child(7) {
+  grid-column: 1 / 2;
+  grid-row: 2;
+} /* Research */
+.task-cell:nth-child(8) {
+  grid-column: 2 / 3;
+  grid-row: 3;
+} /* Prototype */
+.task-cell:nth-child(9) {
+  grid-column: 3 / 4;
+  grid-row: 4;
+} /* Testing */
+.task-cell:nth-child(10) {
+  grid-column: 4 / 5;
+  grid-row: 5;
+} /* Designing */
+.task-cell:nth-child(11) {
+  grid-column: 5 / 6;
+  grid-row: 6;
+} /* Development */
+.task-cell:nth-child(12) {
+  grid-column: 6 / 7;
+  grid-row: 7;
+} /* Finalizing */
+
+/* Researching */
+.section-research {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.section-research h2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.section-research h2::before,
+.section-research h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.section-research h2 span {
+  white-space: nowrap;
+}
+
+.section-research h3 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.paragraph-Persona {
+  margin-bottom: 3rem;
+}
+
+.image-Markus,
+.image-Anna {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph-Markus,
+.paragraph-Anna {
+  padding: 1rem;
+}
