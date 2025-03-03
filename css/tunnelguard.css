@@ -235,3 +235,79 @@
 .paragraph-Anna {
   padding: 1rem;
 }
+
+/* Design */
+.section-design {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.section-design h2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-design h2::before,
+.section-design h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.brand-guideline-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.brand-guideline-toggle {
+  width: 100%;
+  padding: 1.5rem;
+  background: #9c27b0;
+  color: #fff;
+  border: 1px solid #ce93d8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-guideline-toggle:hover {
+  background: #a63db8;
+}
+
+.brand-guideline-toggle h3 {
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.dropdown-arrow {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.brand-guideline-toggle.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.brand-guideline-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-heigt 0.3s ease-out;
+}
+
+.image-guideline {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
