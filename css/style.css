@@ -301,7 +301,7 @@ footer {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1.5px solid #ce93d8;
+  border: 1.5px solid #9c27b0;
   border-radius: 4px;
   font-size: 1.4rem;
 }
@@ -313,7 +313,7 @@ footer {
 
 .contact-form button {
   padding: 0.75rem 1.5rem;
-  background-color: #ba68c8;
+  background-color: #9c27b0;
   color: #fff;
   border: none;
   border-radius: 4px;
