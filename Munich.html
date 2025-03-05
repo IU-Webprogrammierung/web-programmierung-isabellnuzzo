@@ -10,53 +10,6 @@
     <title>Website Design Munich</title>
   </head>
   <body>
-    <header class="header">
-      <!-- Not final version of the Logo -->
-      <a href="index.html">
-        <img
-          class="logo"
-          src="Assets/Test Logo.png"
-          alt="Illustrated cat using a laptop"
-        />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="index.html">About me</a></li>
-          <li class="dropdown">
-            <a class="main-nav-link" href="#">
-              Work
-              <svg
-                class="dropdown-arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m7 10l5 5m0 0l5-5"
-                />
-              </svg>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="main-nav-link" href="wisebloom.html">Wisebloom</a>
-              </li>
-              <li><a class="main-nav-link" href="Munich.html">Munich</a></li>
-              <li>
-                <a class="main-nav-link" href="tunnelguard.html">Tunnelguard</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="main-nav-link nav-cta" href="#contact-me">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <section>
       <div class="munich-hero">
         <div class="heading-purple">
@@ -303,64 +256,7 @@
         </p>
       </div>
     </section>
-
-    <footer>
-      <div class="footer-content">
-        <div class="contact-info">
-          <h2 class="heading-secondary">Contact me</h2>
-          <h3 class="heading-tertiary">Let's work together!</h3>
-
-          <p>
-            I'm always excited to get the opportunity to
-            <strong>conntect with like-minded people</strong> and collaborate on
-            innovative projects. Whether you're looking for someone to bring
-            your ideas to life with, solve complex challenges or create seamless
-            user experiences, I'm here to help. Let's discuss
-            <em>your vision</em> and how we can <em>bring it to life</em>. I'm
-            ready to contribute my skills and expertise. Just reach out to me
-            down below - Let's create something amazing
-            <strong>together!</strong>
-          </p>
-
-          <p>
-            <a href="mailto:isabell.nuzzo@iu-study.org"
-              >isabell.nuzzo@iu-study.org</a
-            ><br />
-            +49123123123
-          </p>
-        </div>
-
-        <div id="contact-me" class="contact-form">
-          <form action="https://formspree.io/f/yourformid" method="POST">
-            <label for="name"> Full Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full name"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="_replyto"
-              placeholder="Email"
-              required
-            />
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Type your message..."
-              required
-            ></textarea>
-            <div class="button-footer">
-              <button class="btn" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </footer>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
   </body>
 </html>
