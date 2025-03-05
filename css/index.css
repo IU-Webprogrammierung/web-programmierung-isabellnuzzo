@@ -113,17 +113,58 @@
 
 /* Technical skills and development skills */
 
+/* General Styles */
+.section-skills {
+  padding: 4rem 0 2rem;
+}
+
+.section-skills h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  gap: 4rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* gif */
+.gif-container {
+  grid-column: 1;
+  margin-top: 3rem;
+  padding: 1rem;
+  order: 1;
+}
+
+.gif-container img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+/* Skills Column */
+.skills-column {
+  flex: 1.5;
+}
+
 .skills-container {
   display: flex;
   gap: 2rem;
-  justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
-.skills-container div {
+.skill-item {
   text-align: center;
-  width: 100px;
-  position: relative;
+  min-width: 100px;
 }
 
 .skills-container label {
@@ -134,31 +175,17 @@
   text-align: center;
 }
 
-.skills-container img {
+.skill-item img {
   width: 6.4rem;
   height: 6.4rem;
   border: 2px solid black;
   border-radius: 8px;
-  display: block;
   margin: 0 auto 0.5rem;
   box-shadow: 4px 4px 0px black;
   object-fit: contain;
-  object-position: center;
 }
 
-.procreate {
-  background-color: #242424;
-}
-
-.adobe-xd {
-  background-color: #470137;
-}
-
-.css {
-  background-color: #663399;
-}
-/* Experience bars */
-
+/* Progress Bars */
 .progress {
   width: 9rem;
   height: 1rem;
@@ -185,36 +212,90 @@
   border-radius: 6px;
 }
 
-/* content container */
-
 .content-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  position: relative;
 }
 
 .skills-column {
-  flex: 2;
+  grid-column: 1;
+}
+
+.languages-column {
+  grid-column: 2;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
 }
 
-.languages-interests-column {
-  flex: 1;
+.interests-column {
+  grid-column: 3;
+  text-align: center;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.languages,
-.interests {
+/* Languages Column */
+.languages-column {
   flex: 1;
-  padding: 1rem;
 }
 
-.interests img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0.5rem;
+.languages-list,
+.soft-list,
+.quotes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.languages-list li,
+.soft-list li,
+.quotes-list li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Interests Column */
+.interests-column {
+  flex: 1;
+}
+
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interests-list li {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.interests-list img {
+  width: 25rem;
+  height: 25rem;
+  margin-left: 1rem;
+}
+
+/* Image Background Colors */
+img[alt="Adobe XD Icon"] {
+  background-color: #470137;
+  padding: 0.3rem;
+}
+
+img[alt="Procreate Icon"] {
+  background-color: #242424;
+  padding: 0.3rem;
+}
+
+img[alt="CSS3 Icon"] {
+  background-color: #663399;
+  padding: 0.3rem;
 }
