@@ -55,9 +55,8 @@ https://maketintsandshades.com/#9C27B0
 */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* 10px=1rem */
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 * {
@@ -71,7 +70,7 @@ html {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 2rem;
 }
 
 .main-nav-link:link,
@@ -80,7 +79,7 @@ html {
   text-decoration: none;
   color: #3e1046;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   transition: all 0.3s;
 }
 
@@ -91,8 +90,8 @@ html {
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 1rem 2.4rem;
-  border-radius: 1rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.625rem;
   color: #fff;
   background-color: #9c27b0;
 }
@@ -107,8 +106,8 @@ html {
 }
 
 .dropdown-arrow {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   vertical-align: text-bottom;
   transition: transform 0.3s;
 }
@@ -120,9 +119,9 @@ html {
   left: 0;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
+  padding: 0.625rem 0;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
@@ -134,10 +133,10 @@ html {
 }
 
 .dropdown-menu li {
-  padding: 0.5rem 1.5rem;
+  padding: 0.3125rem 0.9375rem;
 }
 .dropwdown-menu .main-nav-link {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #3e1046;
   white-space: nowrap;
 }
@@ -151,8 +150,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-right: 4.8rem;
-  height: 16rem;
+  padding-right: 3rem;
+  height: 10rem;
   position: sticky;
   z-index: 2;
 }
@@ -177,46 +176,46 @@ h6 {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 3.25rem;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.5px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .heading-secondary {
   letter-spacing: 3px;
-  margin-bottom: 1.6rem;
-  font-size: 4.4rem;
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.5px;
 }
 
 .heading-tertiary {
-  font-size: 3.6rem;
-  margin-bottom: 1.2rem;
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
   font-weight: 600;
   text-align: left;
 }
 
 .heading-quaternary {
-  font-size: 3rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 ol,
 ul {
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.625rem;
   list-style: none;
 }
 
@@ -229,14 +228,14 @@ ul {
   display: inline-block;
   background-color: #9c27b0;
   color: #fff;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 1rem;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
   border: 1px solid #ce93d8;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  width: 20rem;
+  width: 12.5rem;
 
   transition: background-color 0.3s;
 }
@@ -255,10 +254,10 @@ footer {
 
 .footer-content {
   display: flex;
-  gap: 4rem;
+  gap: 2.5rem;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.625rem;
 }
 
 .contact-info {
@@ -268,11 +267,11 @@ footer {
 
 .contact-info h2,
 .contact-info h3 {
-  margin-bottom: 1 rem;
+  margin-bottom: 0.625rem;
 }
 
 .contact-info p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9375rem;
 }
 
 .contact-info a {
@@ -291,19 +290,19 @@ footer {
 
 .contact-form label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.3125rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.469rem;
+  margin-bottom: 0.625rem;
   border: 1.5px solid #9c27b0;
   border-radius: 4px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
 .contact-form textarea {
@@ -312,12 +311,12 @@ footer {
 }
 
 .contact-form button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.469rem 0.9375rem;
   background-color: #9c27b0;
   color: #fff;
   border: none;
   border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   cursor: pointer;
 }
 

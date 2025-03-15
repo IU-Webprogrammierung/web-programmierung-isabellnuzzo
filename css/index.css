@@ -2,23 +2,23 @@
 
 .section-hero {
   background-color: #f5e9f7;
-  padding: 6.4rem 2rem;
+  padding: 4rem 1.25rem;
 }
 
 .hero {
-  max-width: 130rem;
+  max-width: 81.25rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
+  gap: 6rem;
 }
 
 .hero-img {
   width: 100%;
   display: block;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 0.625rem;
 }
 
 .hero-img-box {
@@ -35,8 +35,8 @@
   background-color: #d7a9df;
   color: #3e1046;
   padding: 8px 12px;
-  border-radius: 1rem;
-  font-size: 1.8rem;
+  border-radius: 0.625rem;
+  font-size: 1.125rem;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -49,31 +49,31 @@
   background-color: #d7a9df;
   color: #3e1046;
   padding: 8px 12px;
-  border-radius: 1rem;
-  font-size: 1.8rem;
+  border-radius: 0.625rem;
+  font-size: 1.125rem;
   font-weight: bold;
   white-space: nowrap;
 }
 
 .hero-text-box {
-  margin-bottom: 10rem;
+  margin-bottom: 6.25rem;
 }
 
 .hero-description {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3rem;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  padding-bottom: 3.125rem;
   text-align: left;
 }
 
 .li-btn {
   display: inline-block;
-  border-radius: 1.5rem;
+  border-radius: 0.9375rem;
   padding: 0;
   margin: 0;
-  width: 8rem;
+  width: 5rem;
   height: auto;
 }
 
@@ -88,9 +88,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
-  margin-top: 5rem;
-  gap: 1rem;
+  gap: 0.625rem;
+  margin-top: 3.125rem;
+  gap: 0.625rem;
   width: 100%;
 }
 
@@ -108,18 +108,18 @@
 
 .whyme-container p {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 0.9375rem;
 }
 
 /* Technical skills and development skills */
 
 /* General Styles */
 .section-skills {
-  padding: 4rem 0 2rem;
+  padding: 2.5rem 0 1.25rem;
 }
 
 .section-skills h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -129,17 +129,17 @@
 /* Content Container */
 .content-container {
   display: flex;
-  gap: 4rem;
+  gap: 2.5rem;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.25rem;
 }
 
 /* gif */
 .gif-container {
   grid-column: 1;
-  margin-top: 3rem;
-  padding: 1rem;
+  margin-top: 1.875rem;
+  padding: 0.625rem;
   order: 1;
 }
 
@@ -157,8 +157,8 @@
 
 .skills-container {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 1.25rem;
+  margin-bottom: 1.875rem;
   flex-wrap: wrap;
 }
 
@@ -169,26 +169,26 @@
 
 .skills-container label {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3125rem;
   text-align: center;
 }
 
 .skill-item img {
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 4rem;
+  height: 4rem;
   border: 2px solid black;
   border-radius: 8px;
-  margin: 0 auto 0.5rem;
+  margin: 0 auto 0.3125rem;
   box-shadow: 4px 4px 0px black;
   object-fit: contain;
 }
 
 /* Progress Bars */
 .progress {
-  width: 9rem;
-  height: 1rem;
+  width: 5.625rem;
+  height: 0.625rem;
   border: none;
   border-radius: 6px;
   overflow: hidden;
@@ -215,7 +215,7 @@
 .content-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 2.5rem;
   position: relative;
 }
 
@@ -255,8 +255,8 @@
 .languages-list li,
 .soft-list li,
 .quotes-list li {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 
 /* Interests Column */
@@ -272,30 +272,30 @@
 
 .interests-list li {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .interests-list img {
-  width: 25rem;
-  height: 25rem;
-  margin-left: 1rem;
+  width: 15.625rem;
+  height: 15.625rem;
+  margin-left: 0.625rem;
 }
 
 /* Image Background Colors */
 img[alt="Adobe XD Icon"] {
   background-color: #470137;
-  padding: 0.3rem;
+  padding: 0.1875rem;
 }
 
 img[alt="Procreate Icon"] {
   background-color: #242424;
-  padding: 0.3rem;
+  padding: 0.1875rem;
 }
 
 img[alt="CSS3 Icon"] {
   background-color: #663399;
-  padding: 0.3rem;
+  padding: 0.1875rem;
 }
