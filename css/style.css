@@ -65,6 +65,29 @@ html {
   box-sizing: border-box;
 }
 
+/* Hide burger menu on desktop */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: static;
+}
+
+.nav-cta {
+  background: #8a2be2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hide mobile navigation by default */
+.burger-menu,
+.mobile-menu {
+  display: none;
+}
+
 /* nav styling */
 .main-nav-list {
   list-style: none;
