@@ -1,3 +1,26 @@
+/* Hide burger menu on desktop */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: static;
+}
+
+.nav-cta {
+  background: #8a2be2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hide mobile navigation by default */
+.burger-menu,
+.mobile-menu {
+  display: none;
+}
+
 /* Hero section */
 
 .section-hero {
@@ -298,4 +321,149 @@ img[alt="Procreate Icon"] {
 img[alt="CSS3 Icon"] {
   background-color: #663399;
   padding: 0.1875rem;
+}
+
+@media (max-width: 768px) {
+  /* Hero Section Adjustments */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .section-hero {
+    padding: 1rem 1rem;
+  }
+
+  .hero-img-box {
+    order: -1;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-contentmobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .birthdate,
+  .origin {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 0.5rem 0;
+    display: inline-block;
+  }
+
+  .hero-text-box {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+
+  /* Why Me Section */
+  .whyme-container {
+    padding: 1rem;
+  }
+
+  .whyme-container p {
+    font-size: 1rem;
+  }
+
+  /* Skills Section */
+  .content-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .skills-column,
+  .languages-column,
+  .interests-column {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .skill-item {
+    flex: 0 1 40%;
+    margin: 0.5rem;
+  }
+
+  .gif-container {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  /* Languages & Soft Skills */
+  .languages-column {
+    background-color: #f5e9f780;
+  }
+
+  .languages-list li,
+  .soft-list li,
+  .quotes-list li {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Interests List */
+  .interests-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .interests-list img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 0.5rem 0;
+  }
+
+  /* Quotes Section */
+  .quotes-list li {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* General Typography */
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.2rem;
+  }
 }
