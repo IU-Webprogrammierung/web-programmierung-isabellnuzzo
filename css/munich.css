@@ -1,4 +1,4 @@
-/* hero / not responsive yet */
+/* hero */
 .munich-hero {
   width: 100%;
   position: relative;
@@ -20,7 +20,9 @@
   padding: 28px;
   background-color: #f5e9f7;
 }
-
+.heading-purple.mobile {
+  display: none;
+}
 .mun,
 .ich {
   position: absolute;
@@ -184,4 +186,246 @@
 
 .section-design > h2:not(:first-child) {
   margin-top: 60px;
+}
+.section-design .c-website-design {
+  margin-right: 10%;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  /* Hero section mobile adjustments */
+  .heading-primary {
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+
+  .heading-primary img {
+    max-width: 100%;
+  }
+
+  .heading-purple {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  .heading-purple.mobile {
+    display: block;
+  }
+
+  .heading-purple.desktop {
+    display: none;
+  }
+
+  .heading-purple.mobile img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  /* Concept section*/
+  .concept {
+    padding: 1rem 1.5rem;
+  }
+
+  .concept-container {
+    display: block;
+  }
+
+  /* Problem-solution layout*/
+  .problem-solution-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .problem-row,
+  .solution-row {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .problem-heading h3,
+  .solution-heading h3 {
+    text-align: center;
+    padding: 0 0 1rem 0;
+  }
+
+  .problem-text,
+  .solution-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Reorder solution content for mobile */
+  .solution-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Final product*/
+  .section-finalproduct {
+    padding: 0 15px;
+  }
+
+  .section-finalproduct h2 {
+    margin-bottom: 30px;
+  }
+
+  .section-finalproduct h3 {
+    text-align: center;
+    margin: 30px 0 15px;
+  }
+
+  .section-finalproduct img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section-design {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .section-design h2,
+  .section-design h3,
+  .section-design p,
+  .section-design img {
+    grid-column: 1;
+  }
+
+  .section-design h3 {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .section-design img {
+    margin-bottom: 15px;
+  }
+
+  .section-design > h2:not(:first-child) {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+
+  /* Hero section*/
+  .heading-primary {
+    padding: 3rem 0;
+  }
+
+  .mun,
+  .ich {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+  }
+
+  .mun {
+    left: 3rem;
+  }
+
+  .ich {
+    right: 10rem;
+  }
+
+  .heading-primary img {
+    max-width: 100%;
+  }
+
+  /* Concept section*/
+  .concept-container {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Problem-solution layout*/
+  .problem-solution-section {
+    gap: 1rem;
+  }
+
+  .problem-row,
+  .solution-row {
+    margin-bottom: 1rem;
+  }
+
+  .problem-heading h3 {
+    padding-right: 0.75rem;
+  }
+
+  .problem-text {
+    padding-left: 0.75rem;
+  }
+
+  .solution-text {
+    padding-right: 0.75rem;
+  }
+
+  .solution-heading h3 {
+    padding-left: 0.75rem;
+  }
+
+  /* Final product*/
+  .section-finalproduct {
+    padding: 30px 20px;
+  }
+
+  .section-finalproduct h2 {
+    margin-bottom: 40px;
+  }
+
+  .section-finalproduct h3 {
+    margin: 30px 5% 15px 0;
+  }
+
+  .section-finalproduct img {
+    max-width: 90%;
+  }
+
+  .section-design {
+    gap: 25px 30px;
+    padding: 30px 20px;
+  }
+
+  .section-design > h2:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .heading-primary {
+    padding: 4.5rem 0;
+  }
+
+  .mun,
+  .ich {
+    font-size: 9.375rem;
+    transition: all 0.3s ease;
+  }
+
+  .mun:hover,
+  .ich:hover {
+    transform: scale(1.05);
+    color: #9c27b0;
+  }
+
+  .heading-primary img:hover {
+    transform: scale(1.02);
+  }
+
+  .concept-container img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
 }

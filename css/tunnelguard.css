@@ -127,6 +127,9 @@
   padding: 2.5rem 1.25rem;
 }
 
+.section-flow.mobile {
+  display: none;
+}
 .section-flow h2 {
   margin-bottom: 2.5rem;
 }
@@ -390,4 +393,285 @@
   border-radius: 12px;
   width: 100%;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section-flow.mobile {
+    display: block;
+  }
+  .section-flow.desktop {
+    display: none;
+  }
+  /* Hero section */
+  .section-one {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .section-one h1 {
+    font-size: 2.8rem;
+    margin: 0.5rem 0;
+  }
+
+  .section-one img {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .section-one h3:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .section-one h3:last-of-type {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .section-one p {
+    grid-column: 1;
+    grid-row: 5;
+    padding: 0;
+    margin-top: 1rem;
+    text-align: left;
+    text-align-last: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .section-psychology {
+    display: block;
+  }
+
+  .section-psychology p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 0.25rem;
+  }
+
+  /* Process flow section */
+  .section-flow {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-flow h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  /* Fix task cell positioning in mobile view */
+  .task-cell:nth-child(7),
+  .task-cell:nth-child(8),
+  .task-cell:nth-child(9),
+  .task-cell:nth-child(10),
+  .task-cell:nth-child(11),
+  .task-cell:nth-child(12) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .week-header {
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: underline;
+  }
+
+  .task-cell {
+    margin-bottom: 0.75rem;
+    border-radius: 12rem;
+    min-height: 45px;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  /* Research section */
+  .section-research {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .section-research h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+  }
+
+  .section-research h3 {
+    font-size: 1.2rem;
+  }
+
+  .image-Markus,
+  .image-Anna {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .paragraph-Persona,
+  .paragraph-Markus,
+  .paragraph-Anna {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Design section */
+  .section-design {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .section-design h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .brand-guideline-toggle {
+    padding: 0.75rem;
+  }
+
+  .brand-guideline-toggle h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Development section */
+  .section-develop {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-develop h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .section-develop h3 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .section-develop h4 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .section-block {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .image-group {
+    width: 100%;
+  }
+
+  .image-group img {
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-group {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-group p {
+    padding: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+
+  /* Hero section */
+  .section-one {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 1.5rem;
+  }
+
+  .section-one h1 {
+    font-size: 4rem;
+  }
+
+  .section-one h3:first-of-type {
+    margin-right: 1rem;
+  }
+
+  .section-one h3:last-of-type {
+    margin-left: 1rem;
+  }
+
+  /* Project psychology section */
+  .section-psychology {
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+
+  /* Process flow section */
+  .section-flow {
+    padding: 2rem 1.5rem;
+  }
+
+  .process-grid {
+    gap: 0.75rem;
+  }
+
+  /* Research section */
+  .section-research {
+    padding: 2rem 1.5rem;
+  }
+
+  .image-Markus,
+  .image-Anna {
+    width: 90%;
+  }
+
+  /* Development section */
+  .section-develop {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-block {
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .image-group {
+    flex: 1.25;
+  }
+
+  .text-group {
+    flex: 1;
+    padding: 0.75rem;
+  }
+
+  .text-group p {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
 }

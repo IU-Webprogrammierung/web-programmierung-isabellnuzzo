@@ -74,7 +74,7 @@ html {
 }
 
 .nav-cta {
-  background: #8a2be2;
+  background: #9c27b0;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -304,6 +304,10 @@ footer {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+.contact-info .heading-secondary {
+  text-align: center;
 }
 
 .contact-form {
