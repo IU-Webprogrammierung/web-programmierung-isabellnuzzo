@@ -68,30 +68,106 @@
   text-align: left;
 }
 
-.li-btn {
-  display: inline-block;
-  border-radius: 0.9375rem;
-  padding: 0;
-  margin: 0;
-  width: 5rem;
-  height: auto;
+/* Styles for the LinkedIn-style button */
+.linkedin-btn {
+  background: transparent;
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid rgb(0, 119, 181);
+  border-radius: 1.5rem;
+  outline: none;
+  overflow: hidden;
+  color: rgb(0, 119, 181);
+  height: 3rem;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  z-index: 2;
 }
 
-.li-btn img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.linkedin-btn span {
+  margin: 10px;
+}
+
+.linkedin-btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
   display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.linkedin-btn:hover {
+  color: #fff;
+  border: 2px solid rgb(0, 119, 181);
+}
+
+.linkedin-btn:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
 }
 
 .button-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 0.625rem;
   margin-top: 3.125rem;
   gap: 0.625rem;
   width: 100%;
+}
+
+.CV-btn {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.CV-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.CVcontent-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.CV-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
 }
 
 /* why me section */
