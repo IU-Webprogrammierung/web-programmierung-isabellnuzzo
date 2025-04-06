@@ -373,7 +373,7 @@
   max-width: none;
   margin: 1.875rem 0;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .text-group {
@@ -388,7 +388,7 @@
 .text-group p {
   font-size: 1.125rem;
   line-height: 1.8;
-  background: #f5e9f7;
+  background: #fbe7ff;
   padding: 1.5625rem;
   border-radius: 12px;
   width: 100%;

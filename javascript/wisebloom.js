@@ -82,30 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
             firstImage.style.display = "none";
             lastImage.style.display = "block";
           }
-        } else if (isTablet) {
-          // Tablet styles
-          firstImage.style.position = "relative";
-          lastImage.style.position = "absolute";
-          lastImage.style.display = "block";
-          firstImage.style.display = "block";
-          lastImage.style.left = "230px";
-          lastImage.style.top = "15px";
-          firstImage.style.top = "0";
-
-          // Reset any transition effects from clicks
-          firstImage.style.transform = "scale(1)";
-          lastImage.style.transform = "scale(1)";
-        } else {
-          // Desktop styles
-          firstImage.style.position = "relative";
-          lastImage.style.position = "absolute";
-          lastImage.style.display = "block";
-          firstImage.style.display = "block";
-          firstImage.style.top = "100px";
-          lastImage.style.left = "310px";
-          lastImage.style.top = "20px";
-          firstImage.style.transform = "scale(1)";
-          lastImage.style.transform = "scale(1)";
         }
       }
     };

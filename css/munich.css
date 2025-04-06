@@ -18,7 +18,10 @@
   width: 100%;
   margin: 0 auto;
   padding: 28px;
-  background-color: #f5e9f7;
+  background: rgba(249, 213, 255, 0.55);
+  border-radius: 16px;
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
 }
 .heading-purple.mobile {
   display: none;
@@ -319,7 +322,7 @@
     font-size: 95%;
   }
 
-  /* Hero section*/
+  /* Hero section */
   .heading-primary {
     padding: 3rem 0;
   }
@@ -331,24 +334,24 @@
   }
 
   .mun {
-    left: 3rem;
+    left: 2rem;
   }
 
   .ich {
-    right: 10rem;
+    right: 7rem;
   }
 
   .heading-primary img {
     max-width: 100%;
   }
 
-  /* Concept section*/
+  /* Concept section */
   .concept-container {
     gap: 1rem;
     padding: 1.5rem;
   }
 
-  /* Problem-solution layout*/
+  /* Problem-solution layout */
   .problem-solution-section {
     gap: 1rem;
   }

@@ -20,14 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <p>
           <a href="mailto:isabell.nuzzo@iu-study.org"
-            >isabell.nuzzo@iu-study.org</a
-          ><br />
-          +49123123123
+            aria-label="Email me at isabell.nuzzo@iu-study.org"
+            >isabell.nuzzo@iu-study.org</a>
+        </p>
+        <p>
+          <a href="tel:+49123123123" aria-label="Call me at +49 123 123 123">+49123123123</a>
         </p>
       </div>
 
       <div id="contact-me" class="contact-form">
-        <form action="https://formspree.io/f/yourformid" method="POST">
+        <form>
           <label for="name">Full Name</label>
           <input
             type="text"

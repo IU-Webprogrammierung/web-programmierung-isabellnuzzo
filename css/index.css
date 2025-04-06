@@ -84,7 +84,7 @@
   text-align: left;
 }
 
-/* Styles for the LinkedIn-style button */
+/* Styles for the LinkedIn button */
 .linkedin-btn {
   background: transparent;
   position: relative;
@@ -658,9 +658,63 @@ img[alt="CSS3 Icon"] {
   }
 }
 
+/* Tablet Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .interests-list li {
+    flex-direction: column;
+  }
+
+  .hero-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text-box {
+    margin-bottom: 0;
+  }
+
+  .birthdate,
+  .origin {
+    font-size: 1rem;
+  }
+
+  .birthdate {
+    top: 50%;
+    left: -5%;
+  }
+
+  .origin {
+    top: 65%;
+    right: -4%;
+  }
+
+  .button-container {
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 0rem;
+  }
+}
+
 /* github button */
 .git-btn {
   justify-content: center;
+}
+
+.git-btn .heading-tertiary {
+  font-size: 2rem;
 }
 
 .btn-github {

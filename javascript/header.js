@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </nav>
 
     <!-- Mobile-Only Navigation -->
-    <button class="burger-menu" aria-label="Toggle Menu">
+    <button class="burger-menu" aria-label="Toggle mobile Menu">
       <img src="Assets/menu-outline.svg" alt="Open menu" class="menu-icon">
       <img src="Assets/close-outline.svg" alt="Close menu" class="close-icon hidden">
     </button>
