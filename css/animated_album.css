@@ -1,3 +1,31 @@
+.animated-album {
+  background-image: linear-gradient(
+      to top,
+      hsl(47 60% 97%) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      30deg,
+      hsl(100deg 40% 85%) 0%,
+      hsl(111 49% 82%) 8%,
+      hsl(120 35% 71%) 17%,
+      hsl(138 23% 79%) 25%,
+      hsl(161 30% 53%) 33%,
+      hsl(180 30% 85%) 42%,
+      hsl(195 35% 88%) 50%,
+      hsl(205 40% 90%) 58%,
+      hsl(210 45% 92%) 67%,
+      hsl(216 86% 86%) 75%,
+      hsl(213 43% 96%) 83%,
+      hsl(225 60% 98%) 92%,
+      hsl(230 65% 99%) 100%
+    );
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 140px, 100% 100%;
+  background-position: bottom, center;
+  background-clip: padding-box;
+}
+
 .animation video::-webkit-media-controls {
   opacity: 1 !important;
   visibility: visible !important;
@@ -13,7 +41,7 @@
 
 .animation video {
   width: 90%;
-  border: 1px solid #ddd;
+  border: 8px solid #473d33;
   border-radius: 8px;
 }
 
@@ -96,6 +124,25 @@ li {
 h2 {
   font-size: 2rem;
   margin-bottom: var(--spacing-sm);
+}
+
+.visual-development {
+  background-image: linear-gradient(
+      to bottom,
+      hsl(47 60% 97%) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(
+      180deg,
+      hsl(47 60% 97%) 0%,
+      hsl(42 20% 98%) 50%,
+      hsl(0 0% 100%) 100%
+    );
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100% 140px, 100% 140px, 100% 100%;
+  background-position: top, bottom, center;
+  background-clip: padding-box;
 }
 
 .sketch {
