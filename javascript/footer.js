@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
         </p>
 
         <p>
-          <a href="mailto:isabell.nuzzo@iu-study.org"
-            aria-label="Email me at isabell.nuzzo@iu-study.org"
-            >isabell.nuzzo@iu-study.org</a>
+          <a href="mailto:isabellnuzzo02@gmail.com"
+            aria-label="Email me at isabellnuzzo02@gmail.com"
+            >isabellnuzzo02@gmail.com</a>
         </p>
         <p>
-          <a href="tel:+49123123123" aria-label="Call me at +49 123 123 123">+49123123123</a>
+          <a href="tel:+41 78 227 5729" aria-label="Call me at +41 78 227 5729">+41 78 227 5729</a>
         </p>
       </div>
 

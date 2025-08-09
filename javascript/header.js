@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </svg>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="main-nav-link" href="wisebloom.html">Wisebloom</a></li>
-            <li><a class="main-nav-link" href="Munich.html">Munich</a></li>
-            <li><a class="main-nav-link" href="tunnelguard.html">Tunnelguard</a></li>
+          <li><a class="main-nav-link" href="tunnelguard.html">Tunnelguard</a></li>
+          <li><a class="main-nav-link" href="animated_album.html">Animation</a></li>
+          <li><a class="main-nav-link" href="wisebloom.html">Wisebloom</a></li>
+          <li><a class="main-nav-link" href="Munich.html">Munich</a></li>
           </ul>
         </li>
                 <li>
