@@ -58,7 +58,7 @@ h1 {
 .raven {
   position: absolute;
   top: 9rem;
-  right: 12rem;
+  right: 1rem;
   margin: 0;
   object-fit: cover;
 }
