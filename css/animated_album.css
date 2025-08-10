@@ -26,11 +26,6 @@
   background-clip: padding-box;
 }
 
-.animation video::-webkit-media-controls {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
 .animation {
   flex: 1 1 50%;
   text-align: left;
@@ -45,10 +40,9 @@
   border-radius: 8px;
 }
 
-video {
-  max-width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.animation video::-webkit-media-controls {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .rest {
@@ -56,14 +50,6 @@ video {
   text-align: justify;
   justify-content: right;
   padding: 20px;
-}
-
-.roles-tools {
-  padding-left: 2rem;
-  margin-top: -10rem;
-}
-.roles-tools ul {
-  list-style-type: "✦ ";
 }
 
 .text-content-h {
@@ -74,33 +60,11 @@ video {
   padding-left: 0;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-}
-
-.kiki {
-  margin-top: 9rem;
-}
-
-.raven {
-  position: absolute;
-  top: 9rem;
-  right: 1rem;
-  margin: 0;
-  object-fit: cover;
-}
-
 .image-content {
   flex: 1 1 40%;
   display: flex;
   min-width: 300px;
   padding: 0 1rem 1rem 1rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -115,15 +79,9 @@ section {
   margin: 0 40px;
 }
 
-li {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: var(--spacing-sm);
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-sm);
+.roles-tools {
+  padding-left: 2rem;
+  margin-top: -10rem;
 }
 
 .visual-development {
@@ -145,6 +103,23 @@ h2 {
   background-clip: padding-box;
 }
 
+.roles-tools ul {
+  list-style-type: "✦ ";
+}
+
+/* Black border for storyboard sketch - Desktop and Tablet only */
+@media (min-width: 769px) {
+  img[alt="Storyboard Sketch"] {
+    border: 5px solid black;
+    border-radius: 15px;
+  }
+}
+
+.sketch-container {
+  justify-content: center;
+  text-align: justify;
+}
+
 .sketch {
   max-height: 700px;
   width: auto;
@@ -154,15 +129,324 @@ h2 {
   border: 3px solid black;
 }
 
-.sketch-container {
-  justify-content: center;
-  text-align: justify;
-}
-
 .sketch-container h1 {
   margin: 2rem 0;
 }
 
 .sketch-text-content {
   margin: 2rem 0;
+}
+
+.kiki {
+  margin-top: 9rem;
+}
+
+.raven {
+  position: absolute;
+  top: 9rem;
+  right: 10rem;
+  margin: 0;
+  object-fit: cover;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Media Elements */
+video {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lightbox Styles */
+.lb {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.lb:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lb-backdrop {
+  position: absolute;
+  inset: 0;
+  display: block;
+  cursor: zoom-out;
+}
+
+.lb-img {
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1001;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.lb:target .lb-img {
+  animation: lb-zoom 0.3s ease;
+}
+
+.lb-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  z-index: 1002;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.lb-close:hover {
+  color: #ddd;
+}
+
+.lb img {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.sketch-link {
+  cursor: zoom-in;
+}
+
+@keyframes lb-zoom {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1550px) {
+  /* Hide raven completely on tablet */
+  .raven {
+    display: none;
+  }
+
+  /* Disable lightbox on tablet */
+  .lb {
+    display: none !important;
+  }
+
+  .lb-backdrop,
+  .lb-close {
+    display: none !important;
+  }
+
+  .sketch-link {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .sketch {
+    cursor: default;
+    width: min(90vw, 720px);
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 2px;
+    margin: 0 auto 1rem;
+  }
+
+  .animated-album .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .animation {
+    order: 1;
+    flex: 0 0 100%;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .animation video {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .text-content-h h1 {
+    text-align: center;
+    margin: 2rem auto 1rem;
+    width: 100%;
+  }
+
+  .text-content-h {
+    flex: 0 0 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .image-content {
+    order: 4;
+    flex: 0 0 50%;
+    padding: 0 12px 12px 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .rest {
+    order: 5;
+    padding: 0 0 12px 12px;
+    text-align: left;
+  }
+
+  .roles-tools {
+    padding-left: 1rem;
+    margin-top: 0;
+    text-align: left;
+    order: 5;
+  }
+
+  .roles-tools ul {
+    list-style-position: outside;
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Background adjustments for mobile */
+  .animated-album {
+    background-size: 100% 90px, 100% 100%;
+    padding: 2rem 1rem;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .visual-development {
+    background-size: 100% 90px, 100% 90px, 100% 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 2rem 1rem;
+  }
+
+  .container,
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+  }
+
+  .animation,
+  .rest,
+  .text-content-h,
+  .image-content {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .animation video {
+    width: 100%;
+    border-width: 6px;
+    border-radius: 6px;
+  }
+
+  video {
+    border-width: 1px;
+    border-radius: 6px;
+  }
+
+  /* Typography adjustments */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Layout adjustments */
+  .roles-tools {
+    padding-left: 1rem;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .roles-tools ul {
+    list-style-position: outside;
+    padding-left: 1.25rem;
+    margin-left: 0;
+  }
+
+  .roles-tools li {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .kiki {
+    margin-top: 2rem;
+  }
+
+  /* Hide decorative raven on mobile */
+  .raven {
+    display: none;
+  }
+
+  .sketch {
+    max-height: none;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+  }
+
+  .image-content {
+    padding: 0 0 1rem 0;
+  }
+
+  /* Text readability improvements */
+  .sketch-text-content p + p,
+  .rest p + p {
+    margin-top: 0.75rem;
+  }
+
+  .sketch-text-content,
+  .sketch-text-content p,
+  .rest,
+  .rest p,
+  .sketch-container {
+    text-align: left;
+    text-justify: auto;
+    hyphens: auto;
+    word-break: normal;
+  }
 }

@@ -6,8 +6,7 @@ This repository contains my personal portfolio project developed as part of the 
 
 ## Live Preview
 
-> [🔗 View the live site (optional link)](https://iu-webprogrammierung.github.io/web-programmierung-isabellnuzzo)  
-> _(or open `index.html` locally in your browser)_
+> [🔗 View the live site](https://iu-webprogrammierung.github.io/web-programmierung-isabellnuzzo)
 
 ---
 
@@ -63,13 +62,15 @@ The design is intended to appeal to potential employers and demonstrate my capab
 
 ```plaintext
 /
-├── index.html                → Landing page
+├── index.html               → Landing page
 ├── tunnelguard.html         → UX Case Study: TunnelGuard
+├── animated_album.html      → UX Case Study: Animation
 ├── wisebloom.html           → UX Case Study: Wisebloom
 ├── munich.html              → UX Case Study: Munich Learning App
 ├── 404.html                 → Custom error page
 ├── css/
 │   ├── style.css
+│   ├── animated_album.css
 │   ├── index.css
 │   ├── tunnelguard.css
 │   ├── wisebloom.css

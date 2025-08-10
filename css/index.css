@@ -459,7 +459,6 @@ img[alt="CSS3 Icon"] {
   /* Hero Section Adjustments */
   .hero {
     grid-template-columns: 1fr;
-    gap: 2rem;
     padding: 0 1rem;
   }
 
@@ -553,9 +552,6 @@ img[alt="CSS3 Icon"] {
   }
 
   /* Languages & Soft Skills */
-  .languages-column {
-    background-color: #f5e9f780;
-  }
 
   .languages-list li,
   .soft-list li,
