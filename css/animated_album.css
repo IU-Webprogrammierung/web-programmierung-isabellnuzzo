@@ -112,6 +112,19 @@ section {
   img[alt="Storyboard Sketch"] {
     border: 5px solid black;
     border-radius: 15px;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1551px) {
+  .sketch-link {
+    display: block;
+    text-align: center;
+  }
+
+  .sketch-link img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -143,8 +156,8 @@ section {
 
 .raven {
   position: absolute;
-  top: 9rem;
-  right: 10rem;
+  top: 2rem;
+  right: 2rem;
   margin: 0;
   object-fit: cover;
 }
